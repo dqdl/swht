@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="天地图"/>
+    <title>面数据</title>
+    <script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=25266b0763afd3f0890b98e08d960894"></script>
+    <style type="text/css">body,html{width:100%;height:100%;margin:0;font-family:"Microsoft YaHei"}#mapDiv{width:100%;height:400px}input,b,p{margin-left:5px;font-size:14px}</style>
+    <script>
+        var map;
+        var zoom = 12;
+        var polygon;
+        function onLoad() {
+            //初始化地图对象
+            map = new T.Map("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new T.LngLat(117.498271,27.343902), zoom);
+            var points = [];
+            points.push(new T.LngLat(117.467190,27.354690));
+            points.push(new T.LngLat(117.522130,27.348900));
+            points.push(new T.LngLat(117.507710,27.307720));
+            points.push(new T.LngLat(117.452090,27.319620));
+            //创建面对象
+            polygon = new T.Polygon(points, {
+                color: "blue",
+                weight: 3,
+                opacity: 0.5,
+                fillColor: "#FFFFFF",
+                fillOpacity: 0.5
+            });
+            //向地图上添加面
+            map.addOverLay(polygon);
+            console.log(points);
+            setTimeout(() => {
+                document.getElementsByClassName('tdt-bottom')[0].style.display = "none"
+            }, 100);
+        }
+    </script>
+</head>
+<body onLoad="onLoad()">
+<div id="mapDiv" ></div>
+<div >
+    <input type="button" value="启动编辑" onclick="polygon.enableEdit();">
+    <input type="button" value="禁止编辑" onclick="polygon.disableEdit();"/>
+</div>
+</body>
+</html>

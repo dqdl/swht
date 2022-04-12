@@ -1,0 +1,278 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    &>.leftBar {
+        height: 100%;
+        width: 375px;
+        border-radius: 10px;
+        background: #fff;
+
+        &>.headTitle {
+            display: flex;
+            width: 100%;
+            height: 52px;
+            color: #0092ff;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            font-family: PingFang SC, PingFang SC-Bold;
+            background-image: url(/src/assets/images/riskAnalysis/title_bg.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            &>.head {
+                display: flex;
+                justify-content: space-around;
+                height: 30px;
+                margin-left: 95px;
+                margin-top: 10px;
+
+                &>:nth-child(1) {
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+
+                &>:nth-child(2) {
+                    width: 200px;
+                    white-space: normal;
+                    font-size: 18px;
+                    letter-spacing: 6px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        &>.line {
+            width: 100%;
+            height: 2px;
+            border-bottom: 1px solid #d9e3ed;
+        }
+        /*// &>.space {*/
+            &>.searchBar {
+                height: 40px;
+                margin-top: 10px;
+                border-radius: 10px;
+
+                &>.n-input {
+                    height: 40px;
+                    border-radius: 5px;
+                    width: 98%;
+                    margin-left: 4px;
+
+                    ::v-deep(.n-input-wrapper) {
+                        .n-input__suffix {
+                            .n-icon {
+                                font-size: 30px;
+                                color: #000000;
+                            }
+                        }
+
+                        .n-input__input {
+                            .n-input__placeholder {
+                                span {
+                                    height: 16px;
+                                    font-size: 14px;
+                                    font-family: SFProText-Regular;
+                                    text-align: left;
+                                    color: #909399;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+            &>.tree {
+                margin-top: 20px;
+                width: 100%;
+                height: 200px;
+
+                &>::v-deep(.n-tree) {
+                    &>.n-tree-node-wrapper {
+                        &>.n-tree-node {
+                            &>.n-tree-node-checkbox {
+                                &>.n-checkbox {
+                                    &>.n-checkbox-box {
+                                        &>.n-checkbox-checked {
+                                            &>.n-checkbox-box {
+                                                background-color: #0486fe !important;
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                &>.n-checkbox-icon {
+                                    &>.check-icon {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        /*// }*/
+
+
+    }
+
+    &>.rightTable {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background: #fff;
+        margin-left: 20px;
+
+
+        &>.headControl {
+            display: flex;
+            border-bottom: 1px solid #d9e3ed;
+
+            &>.allCon {
+                display: flex;
+                position: absolute;
+                right: 8px;
+                top: 10px;
+
+                &>.Con {
+                    margin-right: 20px;
+                }
+            }
+
+            &>.text {
+                width: 230px;
+                height: 52px;
+                padding-left: 20px;
+                line-height: 52px;
+                color: #0092ff;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                font-family: PingFang SC, PingFang SC-Bold;
+                background-image: url(/src/assets/images/riskAnalysis/title_bg.png);
+                background-size: 100% 100%;
+            }
+        }
+
+        &>.footerTable {
+            flex: 1;
+            padding: 24px 20px 48px 20px;
+
+            &> ::v-deep(.n-data-table) {
+                &>.n-data-table__pagination {}
+            }
+
+            &>::v-deep(.n-data-table .n-data-table-tr) {
+                height: 60px;
+            }
+
+            &>.selectpagination {
+                position: relative;
+                bottom: 30px;
+                width: 60%;
+                height: 30px;
+                display: flex;
+                line-height: 30px;
+
+                &>:nth-child(1) {
+                    width: 40px;
+                    height: 30px;
+                }
+
+                &>:nth-child(2) {
+                    height: 30px;
+                    margin-right: 5px;
+                    border-radius: 5px;
+                    width: 60px;
+
+                    &>:nth-child(1) {
+                        width: 60px;
+                    }
+
+                }
+
+                &>:nth-child(3) {
+                    margin-right: 10px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    &>.leftCon{
+        height: 100%;
+        width: 1100px;
+        background: #ffffff;
+        border-radius: 10px;
+        &>.head{
+            width: 100%;
+            height: 49.5px;
+            display: flex;
+            border-bottom: 1px solid #d9e3ed;
+            &>.title{
+                width: 230px;
+                height: 52px;
+                padding-left: 20px;
+                line-height: 52px;
+                color: #0092ff;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1.8px;
+                font-family: PingFang SC, PingFang SC-Bold;
+                background-image: url(/src/assets/images/riskAnalysis/title_bg.png);
+                background-size: 100% 100%;
+            }
+            &>.func{
+                display: flex;
+                justify-content: space-around;
+                margin-left: 650px;
+                cursor: pointer;
+                &>div{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 280px;
+                    margin-top: 7px;
+                    &>p{
+                        margin-top: 15px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &>.rightCon{
+        height: 100%;
+        margin-left: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        &>.searchInput{ 
+            width: 100%;
+            height: 51px;
+            background: #ffffff;
+            border-radius: 10px;
+            ::v-deep(.n-input .n-input__input-el){
+                height: 51px;
+            }
+            ::v-deep(.n-input .n-input__suffix .n-icon, .n-input .n-input__prefix .n-icon){
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        &>.containerInfo{
+            flex: 1;
+            margin-top: 10px;
+            overflow: auto;
+            &>div{
+                margin-top: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

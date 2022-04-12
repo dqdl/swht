@@ -1,0 +1,44 @@
+/*登录修改密码重置密码的input样式*/
+.user_input {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background: #364f68;
+    border: 1px solid #77d1ff;
+    margin-top: 58px;
+    .user_input_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 14px 20px;
+        border-right: 1px solid #77d1ff;
+        img {
+            margin-right: 20px;
+        }
+    }
+    .user_input_img_none {
+        border: none;
+        img {
+            margin-right: 0;
+        }
+    }
+    input {
+        background: #364f68;
+        border: none;
+        height: 58px;
+        width: 100%;
+        padding: 0;
+        outline: none;
+        color: #77d1ff;
+        font-size: 16px;
+    }
+}
+.user_smb_btn {
+    width: 100%;
+    margin-top: 58px;
+    :deep(.n-button) {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+    }
+}

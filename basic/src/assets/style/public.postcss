@@ -1,0 +1,197 @@
+:root {
+  --screen-width: 6720px;
+  --screen-height: 2160px;
+}
+/*login下的placeholder样式修改*/
+.login ::-webkit-input-placeholder {
+  color: #659ed8;
+  font-size: 16px;
+}
+/* 手形 */
+.csspointer {
+  cursor: pointer;
+}
+/* 字体 */
+
+@font-face {
+  font-family: "时尚中黑简体";
+  src: url("@/assets/fonts/时尚中黑简体.TTF");
+}
+
+@font-face {
+  font-family: "BDZYJT";
+  src: url("@/assets/fonts/BDZYJT.TTF");
+}
+
+.pageBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  pointer-events: none;
+}
+
+
+
+/* 二级标题 */
+
+.secondTitle {
+  position: relative;
+  display: block;
+  margin: 0 0 0 49px;
+  padding: 0 0 0 24px;
+  font-family: "SourceHanSansCN-Medium";
+  font-size: 28px;
+  color: #fff;
+  line-height: 36px;
+}
+
+.secondTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, 0);
+  width: 6px;
+  height: 6px;
+  background-color: #ffa748;
+}
+
+.secondTitle .unit {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  font-family: "SourceHanSansCN-Medium";
+}
+/* 左右栏目 */
+
+.leftSideBar,
+.rightSideBar {
+  position: absolute;
+  top: 138px;
+  width: 1440px;
+  height: 1083px;
+  z-index: 9;
+  pointer-events: all;
+  .columns {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.leftSideBar {
+  left: 0;
+  .columns {
+    margin-left: 20px;
+  }
+}
+
+.rightSideBar {
+  right: 0px;
+  .columns {
+    margin-right: 20px;
+  }
+}
+
+/* 图标 */
+
+.icon {
+  display: inline-block;
+}
+
+.num {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 文字倾斜 */
+
+.italic {
+  font-style: italic;
+}
+
+/** 数据统计 **/
+
+
+.btn {
+  display: inline-block;
+  border: 1px solid rgb(40, 180, 235);
+  padding: 4px 12px;
+  background-color: rgba(14, 106, 182, 0.749);
+  border-radius: 5px;
+  color: rgb(155, 216, 255);
+  font-size: 20px;
+  font-family: "SourceHanSansCN-Regular";
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+
+.positionRightTop {
+  position: absolute;
+  width: 255px;
+  height: 40px;
+  top: 15px;
+  right: 25px;
+}
+
+/* naive_ui_menu */
+/* static */
+.n-menu .n-menu-item-content .n-menu-item-content-header {
+  color: #9fb3c6;
+}
+.n-menu .n-menu-item-content .n-menu-item-content__arrow {
+  color: #9fb3c6;
+}
+.n-menu .n-menu-item-content .n-menu-item-content__icon {
+  color: #9fb3c6;
+}
+/* hover */
+.n-menu
+  .n-menu-item-content:not(.n-menu-item-content--disabled):hover
+  .n-menu-item-content-header {
+  color: #1e9fff;
+}
+.n-menu
+  .n-menu-item-content:not(.n-menu-item-content--disabled):hover
+  .n-menu-item-content__arrow {
+  color: #1e9fff;
+}
+.n-menu
+  .n-menu-item-content:not(.n-menu-item-content--disabled):hover
+  .n-menu-item-content__icon {
+  color: #1e9fff;
+}
+/* actived */
+.n-menu
+  .n-menu-item-content.n-menu-item-content--child-active
+  .n-menu-item-content-header {
+  color: #1e9fff;
+}
+.n-menu
+  .n-menu-item-content.n-menu-item-content--child-active
+  .n-menu-item-content__arrow {
+  color: #1e9fff;
+}
+.n-menu
+  .n-menu-item-content.n-menu-item-content--child-active
+  .n-menu-item-content__icon {
+  color: #1e9fff;
+}
+.n-menu
+  .n-menu-item.n-menu-item--selected
+  .n-menu-item-content
+  .n-menu-item-content-header {
+  color: #1e9fff;
+}
+.n-menu .n-menu-item.n-menu-item--selected::before {
+  background-color: transparent;
+}
+.n-menu
+  .n-menu-item.n-menu-item--selected
+  .n-menu-item-content
+  .n-menu-item-content__icon {
+  color: #1e9fff;
+}

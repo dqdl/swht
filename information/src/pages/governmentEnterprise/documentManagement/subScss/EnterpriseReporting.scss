@@ -1,0 +1,38 @@
+.container {
+	height: 100%;
+	background-color: white;
+	margin-left: 30px;
+	padding: 20px 10px;
+	border-radius: 10px;
+	& > .n-form {
+		& > .n-form-item {
+			margin-bottom: 30px;
+		}
+	}
+	& > .footer {
+		display: flex;
+		justify-content: center;
+	}
+}
+::v-deep(.n-base-selection) {
+	display: block;
+}
+::v-deep(.n-card__footer) {
+	display: flex;
+	justify-content: space-evenly;
+}
+// ::v-deep(.n-data-table.n-data-table--bordered .n-data-table-wrapper){
+// }
+.n-data-table.n-data-table--bordered .n-data-table-wrapper {
+	overflow: none !important;
+}
+.online_select {
+	position: absolute;
+	bottom: 50px;
+	width: 122px;
+	color: grey;
+	display: flex;
+	& > p {
+		color: red;
+	}
+}

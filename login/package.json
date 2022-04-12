@@ -1,0 +1,26 @@
+{
+  "name": "dzzhcs",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.14",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "sugarss": "^4.0.1",
+    "swiper": "^7.4.1",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vicons/ionicons5": "^0.11.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "naive-ui": "^2.23.2",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}

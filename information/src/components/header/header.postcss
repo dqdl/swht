@@ -1,0 +1,156 @@
+.header {
+    width: 100%;
+    height:80px;
+    position: relative;
+    .left {
+        background: url(./../../assets/images/login/title_logo.png) no-repeat;
+        float: left;
+        padding: 0.5%;
+        font-size: 32px;
+        letter-spacing: 5px;
+        background-position-y: center;
+        background-position-x: 5%;
+        display:flex;
+        align-items: center; 
+        span{
+            margin-left: 14%;
+            font-size: 28px;
+            letter-spacing:8px;
+            background: linear-gradient(135deg, #e9f4ff 0%, #b1c5d8 100%);
+            font-weight: bold;
+            font-style: italic;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .n-button {
+            border: 0;
+        }
+    }
+
+    .right {
+        cursor: pointer;
+        position: absolute;
+        padding: 1.2%;
+        right: -4%;
+        width: 60%;
+        z-index: 5;
+        .rightH {
+            width: 14%;
+            border-right: 1px solid #A8BDD0;
+            background: url(./../../assets/images/header/header_user.png) no-repeat;
+            height: 25px;
+            float: left;
+            span {
+                position: absolute;
+                letter-spacing: 5px;
+                margin-left: 4%;
+            }
+            
+        }
+        .weather {
+            float: left;
+            width: 12%;
+            display:flex;
+            margin-top: -10px;
+            color:#fff;
+            p {
+                width: 50px;
+            }
+            p:nth-child(1) {
+                margin-right: 10px;
+                height: 50px;
+                background: url(./../../assets/images/header/weather.png) no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .code {
+            float: left;
+            width: 100px;
+             position: relative;
+            span{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: url(./../../assets/images/header/code.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            
+        }
+        
+        .nowTime {
+            float: left;
+            width: 22%;
+            font-size: 20px;
+        }
+        .rightD {
+            width: 20%;
+            height: 25px;
+            float: left;
+            border-right: 1px solid #A8BDD0;
+            span {
+                position: absolute;
+                letter-spacing: 5px;
+                margin-left: 3%;
+                .n-icon{
+                    top:3px
+                }
+            }
+        }
+        .rightR{
+            width: 14%;
+            background: url(./../../assets/images/header/signout.png) no-repeat;
+            height: 25px;
+            float: left;
+            margin-left: 4%;
+            span {
+                position: absolute;
+                letter-spacing: 5px;
+                margin-left: 4%;
+            }
+        }
+    }
+    .bigcode {
+        /* display:none; */
+        color:#fff;
+        position: absolute;
+        top: 80px;
+        right: 23.8%;
+        transform: translate(-85%, -0px);
+        width: 200px;
+        height:230px;
+        background: #333;
+        padding: 0 10px;
+        /* transition: all 1s; */
+        z-index: 999;
+        p {
+            text-align: center;
+            line-height: 20px;
+            margin-top:10px;
+        }
+        span{
+            display: inline-block;
+            margin-top: 10px;
+            width: 180px;
+            height: calc(100% - 50px);
+            transition: all 1s;
+            background: url(./../../assets/images/header/code.png) no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+.closePerson {
+    font-size: 36px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 28px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+.personbox {
+    width: 1100px;
+    height: 700px;
+    position: relative;
+}
